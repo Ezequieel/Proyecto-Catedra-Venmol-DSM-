@@ -1,4 +1,4 @@
-<img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/760a9cef-75c4-41df-b32a-a4d4a4b32615" />
+<img width="1280" height="539" alt="image" src="https://github.com/user-attachments/assets/33e45bac-9f19-44f7-acfa-bd957c63d7fe" />
 
 Venmol - Sistema de Inventario
 Descripción del Proyecto
