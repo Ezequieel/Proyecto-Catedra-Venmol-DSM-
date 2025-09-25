@@ -1,5 +1,6 @@
 <img width="1280" height="539" alt="image" src="https://github.com/user-attachments/assets/33e45bac-9f19-44f7-acfa-bd957c63d7fe" />
 
+
 Venmol - Sistema de Inventario
 Descripción del Proyecto
 Venmol es una aplicación móvil desarrollada en Kotlin con Android Studio para la gestión interna del inventario de la microempresa Venmol.
