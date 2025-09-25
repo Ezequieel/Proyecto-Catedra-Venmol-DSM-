@@ -1,4 +1,5 @@
-<img width="1280" height="539" alt="image" src="https://github.com/user-attachments/assets/33e45bac-9f19-44f7-acfa-bd957c63d7fe" />
+<img width="1280" height="524" alt="image" src="https://github.com/user-attachments/assets/8399d446-e4f9-4932-8c91-8b97d8f3f399" />
+
 
 
 Venmol - Sistema de Inventario
