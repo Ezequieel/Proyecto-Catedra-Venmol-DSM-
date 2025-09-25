@@ -26,6 +26,12 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+        // verificar si el usuario ya está autenticado
+        if (auth.currentUser != null) {
+            navigateToMain()
+            return
+        }
+
         editEmail = findViewById(R.id.editEmail)
         editPassword = findViewById(R.id.editPassword)
         btnLogin = findViewById(R.id.btnLogin)
@@ -38,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginUser() {
-        val email = editEmail.text.toString()
+        val email = editEmail.text.toString().trim()
         val password = editPassword.text.toString()
 
         if (email.isEmpty() || password.isEmpty()) {
@@ -46,15 +52,28 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
+        // esto es para dshabilitar el botón para evitar múltiples toques o clicks
+        btnLogin.isEnabled = false
+        btnLogin.text = "Iniciando..."
+
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
+                btnLogin.isEnabled = true
+                btnLogin.text = "INICIAR SESIÓN"
+
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Bienvenido!", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, MainActivity::class.java))
-                    finish()
+                    navigateToMain()
                 } else {
                     Toast.makeText(this, "Error: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    private fun navigateToMain() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        finish()
     }
 }

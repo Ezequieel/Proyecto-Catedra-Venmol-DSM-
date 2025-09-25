@@ -24,4 +24,15 @@
     <color name="gradient_start">#FCE4EC</color>
     <color name="gradient_end">#F3E5F5</color>
     <color name="black">#FF000000</color>
+
+
+    <!-- Nuevos colores para el menu -->
+    <color name="primary_color">#6366f1</color>
+    <color name="secondary_color">#64748b</color>
+    <color name="background_light">#f8fafc</color>
+    <color name="surface_color">#ffffff</color>
+    <color name="border_color">#e2e8f0</color>
+    <color name="indicator_color">#e0e7ff</color>
+
+    <color name="bottom_nav_indicator_color">@color/indicator_color</color>
 </resources>

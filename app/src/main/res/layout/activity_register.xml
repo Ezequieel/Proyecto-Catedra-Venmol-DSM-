@@ -18,7 +18,7 @@
             android:id="@+id/imgLogo"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/venmol_logo"
+            android:src="@drawable/logovenmoll"
             android:layout_marginBottom="16dp"
             android:contentDescription="Logo Venmol" />
 
@@ -40,7 +40,7 @@
             android:textColor="@color/gray_secondary"
             android:layout_marginBottom="40dp" />
 
-        <!-- Campos de entrada -->
+        <!-- Campos -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
