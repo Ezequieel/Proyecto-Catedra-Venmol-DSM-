@@ -19,6 +19,8 @@ Características
 
 🔑 Autenticación de usuarios: Para empleados y jefes.
 
+👥 Registro de Clientes y Proveedorees: Datos importantes sobre clientes y proveedores.
+
 Tecnologías Utilizadas
 
 Lenguaje: Kotlin
